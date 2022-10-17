@@ -14,14 +14,21 @@
         } */
         div.container-fluid {
             width: 1000px;
-			/* width: 80%;  이것도 가능, 1000px랑 이것 중 선택*/ 
-			margin-left: auto;
-			margin-right: auto;
+	    /* width: 80%;  이것도 가능, 1000px랑 이것 중 선택*/ 
+	    margin-left: auto;
+	    margin-right: auto;
         }
         h3 {
             margin-top: 50px;
             margin-left: 280px;
         }
+	.coin div:hover {
+	    background-color: deepskyblue;
+	    color: white;
+	}
+	#btc {
+	    background-color: deepskyblue;
+		}
     </style>
 </head>
 
@@ -35,14 +42,14 @@
 					<h1><a href="index.html" id="logo">Crypto <em>Tendency</em></a></h1>
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="btc.html">BTC</a></li>
-							<li><a href="eth.html">ETH</a></li>
-							<li><a href="xrp.html">XRP</a></li>
-							<li><a href="doge.html">DOGE</a></li>							
-                        </ul>
-					</nav>
+				<nav id="nav">
+					<ul class="coin">
+					<li><div id="btc"><a href="btc.html">BTC</a></div></li>
+					<li><div id="eth"><a href="eth.html">ETH</a></div></li>
+					<li><div id="xrp"><a href="xrp.html">XRP</a></div></li>
+					<li><div id="doge"><a href="doge.html">DOGE</a></div></li>
+                       		 </ul>
+				</nav>
 
 			</div>
             
