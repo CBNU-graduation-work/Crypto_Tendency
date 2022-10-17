@@ -2576,7 +2576,7 @@ table {
 		#nav:after {
 			content: '';
 			display: block;
-			width: 100%;
+			width: 100%;	
 			height: 0.75em;
 			background-color: #37c0fb;
 			background-image: url("images/bg01.png");
@@ -2585,19 +2585,22 @@ table {
 		#nav > ul {
 			margin: 0;
 		}
-
+			/* 변경 */
 			#nav > ul > li {
 				position: relative;
 				display: inline-block;
-				margin-left: 1em;
+				/* margin-left: 1em; */
+				margin-left: 0;
 			}
-
+				/* 변경 */
 				#nav > ul > li a {
-					color: #c0c0c0;
+					/* color: #c0c0c0; */
+					color: #fff;  /*평상시 네비게이터 글자 색*/
 					text-decoration: none;
 					border: 0;
 					display: block;
-					padding: 1.5em 0.5em 1.35em 0.5em;
+					/* padding: 1.5em 0.5em 1.35em 0.5em; */
+					padding: 1em 2em 1em 2em;
 				}
 
 				#nav > ul > li:first-child {
@@ -2605,7 +2608,7 @@ table {
 				}
 
 				#nav > ul > li:hover a {
-					color: #fff;
+					color: #fff; /*커서 올릴 때 네비게이터 글자 색*/
 				}
 
 				#nav > ul > li.current {
